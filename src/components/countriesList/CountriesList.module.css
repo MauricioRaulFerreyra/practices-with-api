@@ -1,0 +1,15 @@
+.container {
+  width: auto;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.country {
+  padding: 2px;
+  border-radius: 12px;
+  display: flex;
+  flex-flow: column wrap;
+}

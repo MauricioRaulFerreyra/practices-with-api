@@ -1,0 +1,40 @@
+{
+  "name": {
+    "common": "Cyprus",
+    "official": "Republic of Cyprus"
+  },
+  "cca2": "CY",
+  "ccn3": "196",
+  "cca3": "CYP",
+  "independent": true,
+  "status": "officially-assigned",
+  "currencies": {
+    "EUR": {
+      "name": "Euro",
+      "symbol": "€"
+    }
+  },
+  "capital": [
+    "Nicosia"
+  ],
+  "region": "Europe",
+  "subregion": "Southern Europe",
+  "languages": {
+    "ell": "Greek",
+    "tur": "Turkish"
+  },
+  "area": 9251,
+  "maps": {
+    "googleMaps": "https://goo.gl/maps/77hPBRdLid8yD5Bm7",
+    "openStreetMaps": "https://www.openstreetmap.org/relation/307787"
+  },
+  "population": 1207361,
+  "continents": [
+    "Europe"
+  ],
+  "flags": {
+    "png": "https://flagcdn.com/w320/cy.png",
+    "svg": "https://flagcdn.com/cy.svg",
+    "alt": "The flag of Cyprus has a white field, at the center of which is a copper-colored silhouette of the Island of Cyprus above two green olive branches crossed at the stem."
+  }
+}
