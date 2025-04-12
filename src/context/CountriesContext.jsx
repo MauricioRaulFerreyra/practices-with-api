@@ -1,6 +1,5 @@
 import { useState, useEffect, createContext, useContext } from "react";
 import { fetchCountries } from "../services/countriesFetch";
-// import { axiosCountries } from "../services/countriesAxios";
 
 const CountriesContext = createContext();
 
@@ -22,7 +21,6 @@ export const CountriesProvider = ({ children }) => {
       try {
         setLoading(true);
         const data = await fetchCountries();
-        // const data = await axiosCountries();
         const validCountries = data.filter(
           (country) =>
             (country?.cca2 &&

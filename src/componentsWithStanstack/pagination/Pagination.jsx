@@ -1,20 +1,23 @@
 import style from "./Pagination.module.css";
-import { useCountriesContext } from "../../context/CountriesContext";
+import { useCountries } from "../../contextWithTanstack/countries-hook";
 
 export const Pagination = () => {
-  const { allCountries, pagination, handlePageChange, loading } =
-    useCountriesContext();
+  const {
+    filteredCount,
+    currentPage,
+    countriesPerPage,
+    handlePageChange,
+    isLoading,
+  } = useCountries();
 
-  const { currentPage, countriesPerPage } = pagination;
-
-  const allPages = Math.ceil(allCountries.length / countriesPerPage);
+  const allPages = Math.ceil(filteredCount / countriesPerPage);
 
   const pageNumbers = [];
   for (let i = 1; i <= allPages; i++) {
     pageNumbers.push(i);
   }
 
-  if (loading || allCountries.length === 0) return null;
+  if (isLoading || filteredCount === 0) return null;
 
   return (
     <section className={style.container}>
