@@ -1,0 +1,61 @@
+.card {
+  width: 250px;
+  height: 200px;
+  cursor: pointer;
+  margin: 0 0 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  animation: principal 1.5s forwards;
+}
+
+.card:hover {
+  animation: principal-hover 1.5s forwards;
+
+}
+
+.title {
+  text-align: center;
+  margin: 0.5rem;
+  font-size: 1rem;
+  text-decoration-color: whitesmoke;
+}
+
+.container {
+  height: 50%;
+  width: 75%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imagen {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.25rem;
+}
+
+.subtitle {
+  font-size: 1rem;
+  color: #eef4f5;
+}
+
+.population {
+  margin: 0;
+  font-size: 1rem;
+  color: #eef4f5;
+}
+
+@keyframes principal {
+  to {
+    transform: perspective(500px) rotate3d(0, -1, 0, 25deg);
+  }
+}
+
+@keyframes principal-hover {
+  to {
+    transform: perspective(500px) rotate3d(0, -1, 0, 0deg);
+  }
+}

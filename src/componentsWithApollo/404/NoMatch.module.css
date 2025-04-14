@@ -1,0 +1,34 @@
+.nomatch {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.btn {
+  margin: 1rem 0;
+  background-image: linear-gradient(#f5b7b1, #cb4335);
+  font-size: 20px;
+  font-family: 'Roboto Slab', serif;
+  font-weight: bold;
+  padding: 4px 8px;
+  border: transparent;
+  border: none;
+  border-radius: 0.6rem;
+  cursor: pointer;
+  color: rgb(32 29 29);
+  outline: none;
+  transition-duration: 1.2s;
+}
+
+.btn:hover {
+  color: white;
+  background-image: linear-gradient(#e69d96, #b83526);
+  transition-duration: 1.2s;
+}
+
+h3 {
+  font-size: 28px;
+  color: floralwhite;
+}
